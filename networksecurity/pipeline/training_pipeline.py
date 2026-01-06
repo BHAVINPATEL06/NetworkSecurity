@@ -85,7 +85,7 @@ class Training_Pipeline:
             self.s3_sync.sync_folder_to_s3(folder = self.training_pipeline_config.artifact_dir,aws_bucket_url=aws_bucket_url)
             logging.info('artifact foler synced to the s3 bucket successfully!')
         except Exception as e:
-            logging.info('SOMETHING WENT WRONG WHILE SYNCING THE FOLDER WIHT S3 BUCKET \n ERROR IS :- ' ,e)
+            logging.info('SOMETHINGG WENT WRONG WHILE SYNCING THE FOLDER WIHT S3 BUCKET \n ERROR IS :- ' ,e)
             raise NetworkSecurityException(e,sys)
         
     ## local final model is going to s3 bucket 
